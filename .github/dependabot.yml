@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/complete"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.springframework.boot:spring-boot-starter-parent
+    versions:
+    - 2.4.2
+    - 2.4.3
+    - 2.4.4
+  - dependency-name: org.webjars:bootstrap
+    versions:
+    - 4.6.0
+  - dependency-name: org.webjars:jquery
+    versions:
+    - 3.5.1
+  - dependency-name: org.webjars:sockjs-client
+    versions:
+    - 1.1.2
+  - dependency-name: org.webjars:stomp-websocket
+    versions:
+    - 2.3.3-1
